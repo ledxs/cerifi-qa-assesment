@@ -1,3 +1,46 @@
+## Cypress Test Documentation
+
+### Overview
+This document outlines the structure and usage of the automated test suite for the SauceDemo application. It covers the testing of the standard user's end-to-end purchase flow.
+
+### Running Tests
+- Open a terminal.
+- Navigate to the project's root directory.
+- Execute the command: `npx cypress run --spec "cypress/e2e/purchaseFlowStandardLogin.cy.js"`
+
+### Structure of the Framework
+├── e2e/
+│ ├── purchaseFlowStandardLogin.cy.js
+├── fixtures/
+│ ├── users.json
+├── pages/
+│ ├── LoginPage.js
+│ ├── ProductsPage.js
+│ ├── CartPage.js
+│ ├── CheckoutStepOnePage.js
+│ ├── CheckoutStepTwoPage.js
+│ ├── OrderConfirmationPage.js
+├── support/
+├── commands.js
+
+### Key Directories
+- **e2e**: Contains test cases.
+- **fixtures**: Holds data files like user credentials.
+- **pages**: Includes scripts for page interactions.
+
+### How to Contribute
+- Enhance the test by creating more page interaction scripts under the pages directory.
+- Extend test cases by adding new `.cy.js` files in the e2e directory.
+
+### Note
+This framework is designed to be scalable and maintainable, leveraging the Page Object Model for ease of updates and readability.
+
+### Challenge
+- QA Automation Assessment.
+
+# ----------------------------------------------------
+
+
 # QA Automation Assessment
 
 Welcome to the QA Automation assessment. You will be testing a fictional e-commerce application, SauceDemo, to ensure its functionality and user experience are robust.
